@@ -1,0 +1,7 @@
+{
+    "products":[
+        {"productId":"", "categoryId":"", "stock":"", "price":""},
+        {"productId":"", "categoryId":"", "stock":"", "price":""},
+        {"productId":"", "categoryId":"", "stock":"", "price":""}
+    ]
+}

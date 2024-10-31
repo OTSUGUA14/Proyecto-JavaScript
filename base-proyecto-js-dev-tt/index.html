@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+	<link rel="stylesheet" href="src/cardPost.css">
+	<link rel="stylesheet" href="src/cardProduct.css">
+	<link rel="stylesheet" href="src/style.css">
+	<link rel="stylesheet" href="src/cardUsers.css">
+	<link rel="stylesheet" href="src/cardRecep.css">
+	<title>AUGUSTO RIQUELME</title>
+</head>
+
+<body>
+	<header>
+		
+		
+
+		<nav>
+			<ul>
+				<li id="iniciar-sesion" class="btn-header ">Iniciar Sesion</li>
+				<li id="registrarse" class="btn-header ">Registrarse</li>
+				<li id="show-products" class="btn-header ocultar ">Products</li>
+				<li id="show-posts" class="btn-header ocultar">Posts</li>
+				<li id="show-recetas" class="btn-header ocultar ">Recipes</li>
+				<li id="show-users" class="btn-header ocultar ">Users</li>
+				<li id="cerrar-sesion" class="btn-header ocultar ">Cerrar Sesión</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!-- Registro -->
+		<section class="registro ocultar">
+			<form id="">
+				<div class=" r-l">
+
+				<div class="datos">
+					<!-- Nombre -->
+					<label for="nombre">Nombre</label>
+					<input id="nombre" type="text" name="nombre">
+					<p class="advertencia ocultar" name="nombre"># El nombre debe tener minimo 4 letras y no puede contener números</p>
+
+					<!-- Apellido -->
+					<label for="apellido">Apellido</label>
+					<input id="apellido" type="text" name="apellido">
+					<p class="advertencia ocultar" name="apellido"># El apellido debe tener minimo 4 letras y no puede contener números</p>
+					
+					<!-- Edad -->
+					<label for="">Edad</label>
+					<input type="text" name="edad">
+					<p class="advertencia ocultar" name="edad"># La edad no puede ser menor a dos digitos ni mayor a dos</p>
+
+					<!-- Pais -->
+					<label for="">Pais</label>
+					<select>
+						<option value="Argentina">Argentina</option>
+					</select>
+				</div>
+
+				<div class="datos">
+
+					<!-- Usuario -->
+					<label for="usuario">Usuario</label>
+					<input id="usuario" type="text" name="usuario">
+					<p class="advertencia ocultar" name="usuario"># El usuario debe tener 4 a 16 letras y sin digitos especiales(`,$,#)</p>
+
+					<!-- Contraseña -->
+					<label for="password">Contraseña</label>
+					<input id="password" type="password" name="password">
+					<p class="advertencia ocultar" name="password">## La contraseña debe tener 8 a 12 dígitos y una mayusculas y una minusculas por lo menos</p>
+
+					<!-- Repetir Contraseña -->
+					<label for="repetir">Repetir contraseña</label>
+					<input type="password" id="repetir" name="repetir" >
+					<p class="advertencia ocultar" name="repetir"># Tiene que ser igual a la contraseñar</p>
+
+					<!-- Email -->
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email">
+					<p class="advertencia ocultar"  name="email"># Ingrese un correo valido</p>
+
+				</div>
+				</div>
+
+				<!-- Boton registro -->
+				<button id="btn-registro">Registrarse</button>
+			</form>
+		</section>
+
+		<!-- Iniciar Sesion -->
+		<section class="inicio">
+			<form id="">
+				<div>
+					<!-- Usuario -->
+					<label for="">Usuario</label>
+					<input id="login-user" type="text">
+
+					<!-- Contraseña -->
+					<label for="">Contraseña</label>
+					<input id="login-password" type="password">
+				</div>
+				<!-- Boton Inicio Sesion -->
+				<button id="btn-login">Ingresar</button>
+			</form>
+		</section>
+
+		<!-- Ya iniciado -->
+		<section class="r-s ocultar">
+			<section id="sect-home" class="ocultar">
+				
+			</section>
+			<section id="arrow" class="ocultar">
+				<button class="cta1 ocultar" >
+					<span class="span1">PREVIOUS</span>
+					<span class="second1">
+					  <svg
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xmlns="http://www.w3.org/2000/svg"
+						version="1.1"
+						viewBox="0 0 66 43"
+						height="20px"
+						width="50px"
+					  >
+						<g
+						  fill-rule="evenodd"
+						  fill="none"
+						  stroke-width="1"
+						  stroke="none"
+						  id="arrow1"
+						>
+						  <path
+							fill="#FFFFFF"
+							d="M25.8456067,3.89485454 L22.0236851,0.139296592 C21.8291689,-0.0518420739 21.5173671,-0.0518571125 21.3228325,0.139262789 L0.308386573,20.7848311 C-0.0855800704,21.1718824 -0.0911863181,21.8050225 0.295865042,22.1989893 C0.299981248,22.2031791 0.304134277,22.2073326 0.308323787,22.2114492 L21.322902,42.8607841 C21.5174043,43.0519059 21.8291758,43.0519358 22.0237147,42.8608513 L25.8454814,39.1069479 C26.0424848,38.9134427 26.0453207,38.5968729 25.8518155,38.3998695 C25.8497107,38.3977268 25.8475868,38.395603 25.8454438,38.3934985 L9.00622113,21.8567812 C8.8091972,21.6632968 8.80632803,21.3467273 8.99981245,21.1497035 C9.00193534,21.1475418 9.00407773,21.1453995 9.00623954,21.1432767 L25.8454792,4.60825197 C26.0425131,4.41477773 26.0453987,4.09820839 25.8519244,3.90117456 C25.8498374,3.89904911 25.8477314,3.89694235 25.8456067,3.89485454 Z"
+							class="one1"
+						  ></path>
+						  <path
+							fill="#FFFFFF"
+							d="M45.8456067,3.89485454 L42.0236851,0.139296592 C41.8291689,-0.0518420739 41.5173671,-0.0518571125 41.3228325,0.139262789 L20.3083866,20.7848311 C19.9144199,21.1718824 19.9088137,21.8050225 20.295865,22.1989893 C20.2999812,22.2031791 20.3041343,22.2073326 20.3083238,22.2114492 L41.322902,42.8607841 C41.5174043,43.0519059 41.8291758,43.0519358 42.0237147,42.8608513 L45.8454814,39.1069479 C46.0424848,38.9134427 46.0453207,38.5968729 45.8518155,38.3998695 C45.8497107,38.3977268 45.8475868,38.395603 45.8454438,38.3934985 L29.0062211,21.8567812 C28.8091972,21.6632968 28.806328,21.3467273 28.9998124,21.1497035 C29.0019353,21.1475418 29.0040777,21.1453995 29.0062395,21.1432767 L45.8454792,4.60825197 C46.0425131,4.41477773 46.0453987,4.09820839 45.8519244,3.90117456 C45.8498374,3.89904911 45.8477314,3.89694235 45.8456067,3.89485454 Z"
+							class="two1"
+						  ></path>
+						  <path
+							fill="#FFFFFF"
+							d="M65.8456067,3.89485454 L62.0236851,0.139296592 C61.8291689,-0.0518420739 61.5173671,-0.0518571125 61.3228325,0.139262789 L40.3083866,20.7848311 C39.9144199,21.1718824 39.9088137,21.8050225 40.295865,22.1989893 C40.2999812,22.2031791 40.3041343,22.2073326 40.3083238,22.2114492 L61.322902,42.8607841 C61.5174043,43.0519059 61.8291758,43.0519358 62.0237147,42.8608513 L65.8454814,39.1069479 C66.0424848,38.9134427 66.0453207,38.5968729 65.8518155,38.3998695 C65.8497107,38.3977268 65.8475868,38.395603 65.8454438,38.3934985 L49.0062211,21.8567812 C48.8091972,21.6632968 48.806328,21.3467273 48.9998124,21.1497035 C49.0019353,21.1475418 49.0040777,21.1453995 49.0062395,21.1432767 L65.8454792,4.60825197 C66.0425131,4.41477773 66.0453987,4.09820839 65.8519244,3.90117456 C65.8498374,3.89904911 65.8477314,3.89694235 65.8456067,3.89485454 Z"
+							class="three1"
+						  ></path>
+						</g>
+					  </svg>
+					</span>
+				  </button>
+				  
+					 
+				  <button class="cta">
+					<span class="span">NEXT</span>
+					<span class="second">
+					  <svg
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						xmlns="http://www.w3.org/2000/svg"
+						version="1.1"
+						viewBox="0 0 66 43"
+						height="20px"
+						width="50px"
+					  >
+						<g
+						  fill-rule="evenodd"
+						  fill="none"
+						  stroke-width="1"
+						  stroke="none"
+						  id="arrow"
+						>
+						  <path
+							fill="#FFFFFF"
+							d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+							class="one"
+						  ></path>
+						  <path
+							fill="#FFFFFF"
+							d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+							class="two"
+						  ></path>
+						  <path
+							fill="#FFFFFF"
+							d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+							class="three"
+						  ></path>
+						</g>
+					  </svg>
+					</span>
+				  </button>
+				  
+						
+			 </section>
+			<!-- CARD CONTAINER -->
+			<!-- USERS -->
+			<section id="users" class="card-container ocultar">
+				<!-- Card -->
+				
+				<!-- ---- -->
+			</section>
+			<!-- ----- -->
+			<!-- Productos -->
+			<section id="products" class="card-container">
+				<!-- Card -->
+			
+				<!-- ---- -->
+			</section>
+			<!-- ---- -->
+			<!-- Recetas -->
+			<section id="recipes" class="card-container ocultar">
+				<!-- Card -->
+				
+				<!-- ---- -->
+			</section>
+			<section id="posts" class="card-container ocultar">
+				<!-- Card -->
+				
+					
+				<!-- ---- -->
+			</section>
+			<!-- ---- -->
+		</section>
+	</main>
+	<footer>
+		<ul>
+			
+			<li><a href="https://www.instagram.com/augusto_riquelme14/?utm_source=qr&igsh=ZGp1NTlsM3B2Y25x" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
+				alt=""  ></a></li>
+		</ul>
+	</footer>
+	<script type="module" src="./src/scripts/main.mjs"></script>
+</body>
+
+</html>
