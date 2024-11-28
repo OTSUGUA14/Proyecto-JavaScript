@@ -1,0 +1,147 @@
+@import url('./cardProduct.css');
+@import url('./cardUsers.css');
+@import url('./cardPost.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.advertencia{
+    display: flex;
+    width: 100%;
+    color: red;
+    font-size: 12px;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+body{
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    color:#2f2f2f;
+    border-radius: 8px;
+    width: 100%;
+    margin: 16px 0px;
+    padding: 8px 8px;
+    align-items: center;
+}
+
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav li{
+    list-style: none;
+}
+
+main{
+    width: 100%;
+}
+
+.registro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    background-color: antiquewhite;
+    color: #2f2f2f;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 16px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.r-l{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+input{
+    transition: ease 300ms;
+}
+
+input:hover{
+    box-shadow: 0px -2px 1px 4px lightblue
+}
+
+footer{
+    display: flex;
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 30px;
+}
+
+footer ul li{
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ocultar{
+    display: none !important
+}
+
+.r-s{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    width: 80%;
+    justify-content: center;
+}
+
+.btn-header{
+    border: 2px solid #2f2f2f;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #2f2f2f;
+    color: antiquewhite;
+    transition: ease all 300ms;
+}
+
+.btn-header:hover{
+    box-shadow: 4px 6px aqua ;
+}
+
+
