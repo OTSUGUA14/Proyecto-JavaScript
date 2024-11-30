@@ -1,7 +1,7 @@
 // Función asíncrona para obtener todos los usuarios de la API
 export const getAllUser = async (salt) => {
     // Realiza una petición GET a la API para obtener usuarios con paginación
-    const res = await fetch(`http://dummyjson.com/users?limit=8&skip=${salt}`);
+    const res = await fetch(`https://dummyjson.com/users?limit=8&skip=${salt}`);
     
     // Desestructura la respuesta para obtener la lista de usuarios
     const { users } = await res.json();
